@@ -3,22 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "nodemon server/index.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/express": "^4.17.13",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.10",
     "next": "12.1.4",
+    "nodemon": "^2.0.15",
     "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react-dom": "18.0.0",
+    "ts-node": "^10.7.0"
   },
   "devDependencies": {
-    "@types/node": "17.0.23",
+    "@types/node": "^17.0.23",
     "@types/react": "18.0.0",
     "@types/react-dom": "18.0.0",
     "eslint": "8.12.0",
     "eslint-config-next": "12.1.4",
-    "typescript": "4.6.3"
+    "typescript": "^4.6.3"
   }
 }
